@@ -1,38 +1,201 @@
-.App {
-  text-align: center;
+html{
+    /* background-color: yellow;*/
+  padding: 10px;
+  margin: 0;
+}
+body{
+  /* background-color: blue;*/
+  padding: 10px;
+  margin: 0;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
+  /* background-color: brown; */
+  margin: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
+  flex-wrap:wrap; 
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  
+}
+.body-container{
+ 
+ 
+  width: 33%;
+
+}
+.body-container h1{
+  text-align: center;
+  
+}
+.Balance{
+  background-color:white;
+  border-radius: 5px;
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: grey;
+  background-position-x: right;
 }
 
-.App-link {
-  color: #61dafb;
+
+.incomeexp{
+ 
+  border-radius: 5px;
+  border-color: blue;
+  border-width: 1px;
+  border-style: solid;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.incomeexp> div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.income{
+  background-color:white;
+  border-radius: 5px;
+  border-color: blue;
+  border-width: 1px;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  width: 50%;
+}
+.expense{
+  background-color:white;
+  border-radius: 5px;
+  border-color: blue;
+  border-width: 10px;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  width: 50%;
+}
+.incomeexp .plus {
+color: green;
+
+}
+.incomeexp  .minus{
+  color: red;
+}
+
+.list {
+  /*background-color:white; */
+  padding: 10px;
+  border-radius: 5px;
+  border-color: grey;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.list li{
+  
+  list-style-type:none;
+  line-height: 21px;
+  text-align: right;
+  background: grey;
+  padding: 5px;
+ margin: 10px;
+ 
+  display: flex;
+}
+.list li.plus
+{
+  color: blue;  
+  border-right: 5px solid  green;
+}
+.list li.plus > span
+{
+  
+  color:red;
+  text-align: right;
+  
+ 
+}
+.list li.plus:hover
+{
+  background-color: green;
+}
+
+
+.list li.minus
+{
+  color: blue;;
+ 
+  border-right: 5px solid  red;
+}
+.list li .minus > span
+{
+  align-content: right;
+  color: blue;;
+ 
+  border-right: 5px double red;
+}
+.list li.minus:hover
+{
+  background-color: red;
+}
+
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #8a6a66;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+
+.form-control{
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 2px solid #dedede;
+  border-radius: 5px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn{
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  margin-top: 10px;
+  margin:10px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
 }
