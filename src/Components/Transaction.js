@@ -6,9 +6,10 @@ export const Transaction = ({transaction}) => {
 
     return <div>
          <li className={transaction.Amount >0?"plus":"minus"}>
+         <button onClick={() => deleteTran(transaction.id)} className=".delete-btn">X</button>
           { transaction.Decaription } 
           <span >  { transaction.Amount } </span>
-          <button onClick={() => deleteTran(transaction.id)} className=".delete-btn">X</button>
+          
         </li>
     </div>;
 };
