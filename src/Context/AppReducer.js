@@ -1,4 +1,4 @@
-import { Transaction } from "../Components/Transaction";
+
 
 export const AppReducer = (state,action) => {
 switch (action.type){
